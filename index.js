@@ -1,9 +1,10 @@
 
-function takeANumber(line, name){
+function takeANumber(line, new_name){
   // find index of name in line, add 1
-  let position = line.indexOf(name) + 1;
+  let position = line.indexOf(new_name) + 1;
   // return string with template literal
-  return `Welcome, ${name}. You are number ${position} in line.`
+  line.push(new_name);
+  return `Welcome, ${new_name}. You are number ${position} in line.`
 }
 
 

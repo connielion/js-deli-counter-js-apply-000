@@ -11,7 +11,7 @@ function nowServing(line) {
   if(line.length>1){
     const res = line.shift();
    
-    return res;
+    return `Currently serving ${res}`;
   } else {
     return "There is nobody waiting to be served!"
   }

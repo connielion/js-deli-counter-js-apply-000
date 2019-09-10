@@ -10,7 +10,7 @@ function nowServing(line) {
   
   if(line.length>1){
     const res = line.shift();
-    console.log(line);
+   
     return res;
   } else {
     return "There is nobody waiting to be served!"

@@ -22,9 +22,9 @@ function currentLine(line) {
   
   let str = [];
   
-  for(let i = 1; i < line.length; i++){
+  for(let i = 0; i < line.length; i++){
     const name = line[i];
-    str.push(`${i}. ${name}`) 
+    str.push(`${i+1}. ${name}`) 
   }
   return "The line is currently: " + str.join(', ');
 }
